@@ -48,6 +48,7 @@ Tumor masks are used to isolate the region of interest for radiomics feature ext
 * Visualization of MRI images with overlayed tumor masks
 
 2. Feature Extraction
+
 First-Order Statistics:
 * Mean
 * Standard Deviation
@@ -118,5 +119,7 @@ jupyter notebook BrainTumor.ipynb
 
 # Author
 Varsini Sakthivadivel Ramasamy
+
 MS Bioinformatics
+
 Johns Hopkins University
