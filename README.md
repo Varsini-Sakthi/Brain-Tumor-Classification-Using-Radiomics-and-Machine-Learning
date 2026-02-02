@@ -66,6 +66,7 @@ All features are computed only within the tumor region.
 
 3. Machine Learning Models
 | Model | Description |
+| ----- | ----------- |
 | Logistic Regression | Baseline linear classifier with feature scaling |
 | Random Forest | Ensemble tree-based model handling non-linearities |
 | XGBoost | Gradient-boosted trees optimized for multi-class classification |
