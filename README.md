@@ -26,9 +26,13 @@ The workflow covers image preprocessing, feature extraction, model training, eva
 
 # Repository Structure
 ├── BrainTumor.ipynb              # Complete pipeline notebook
+
 ├── radiomics_features.csv        # Extracted radiomics features
+
 ├── dataset/
+
 │   └── data/                     # MRI .mat files
+
 ├── README.md                     # Project documentation
 
 # Dataset Description
