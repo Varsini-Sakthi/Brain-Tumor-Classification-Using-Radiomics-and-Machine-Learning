@@ -4,25 +4,24 @@ This project implements an end-to-end radiomics-based machine learning pipeline 
 The workflow covers image preprocessing, feature extraction, model training, evaluation, and comparison, making it suitable for research and educational purposes in medical imaging, bioinformatics, and applied machine learning.
 
 # Project Overview
+Input: Brain MRI images with tumor masks (.mat files)
 
-* Input: Brain MRI images with tumor masks (.mat files)
+1. Feature Engineering:
 
-* Feature Engineering:
+* First-order statistical features
+* GLCM texture features
 
-1. First-order statistical features
-2. GLCM texture features
+2. Models Implemented:
 
-* Models Implemented:
+* Logistic Regression
+* Random Forest
+* XGBoost
 
-1. Logistic Regression
-2. Random Forest
-3. XGBoost
+3. Evaluation Metrics:
 
-* Evaluation Metrics:
-
-1. Accuracy
-2. Precision, Recall, F1-score (macro)
-3. ROC-AUC (One-vs-Rest)
+* Accuracy
+* Precision, Recall, F1-score (macro)
+* ROC-AUC (One-vs-Rest)
 
 # Repository Structure
 ```bash
@@ -49,14 +48,14 @@ Tumor masks are used to isolate the region of interest for radiomics feature ext
 * Visualization of MRI images with overlayed tumor masks
 
 2. Feature Extraction
-First-Order Statistics
+First-Order Statistics:
 * Mean
 * Standard Deviation
 * Minimum & Maximum
 * Skewness
 * Kurtosis
 
-Texture Features (GLCM)
+Texture Features (GLCM):
 * Contrast
 * Dissimilarity
 * Homogeneity
