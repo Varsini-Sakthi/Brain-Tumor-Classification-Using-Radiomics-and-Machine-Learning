@@ -1,4 +1,4 @@
-# Brain-Tumor-Classification-Using-Radiomics-and-Machine-Learning
+# Brain Tumor Classification Using Radiomics and Machine Learning
 This project implements an end-to-end radiomics-based machine learning pipeline for brain tumor classification using MRI images. Hand-crafted texture and intensity features are extracted from tumor regions and used to train and evaluate multiple machine learning models.
 
 The workflow covers image preprocessing, feature extraction, model training, evaluation, and comparison, making it suitable for research and educational purposes in medical imaging, bioinformatics, and applied machine learning.
