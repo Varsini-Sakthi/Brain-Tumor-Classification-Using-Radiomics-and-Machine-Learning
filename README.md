@@ -25,15 +25,15 @@ The workflow covers image preprocessing, feature extraction, model training, eva
 3. ROC-AUC (One-vs-Rest)
 
 # Repository Structure
-├── BrainTumor.ipynb # Complete pipeline notebook
+├── BrainTumor.ipynb <!-- Complete pipeline notebook -->
 
-├── radiomics_features.csv # Extracted radiomics features
+├── radiomics_features.csv <!-- Extracted radiomics features -->
 
 ├── dataset/
 
-│   └── data/ # MRI .mat files
+│   └── data/ <!-- MRI .mat files -->
 
-├── README.md # Project documentation
+├── README.md <!-- Project documentation -->
 
 # Dataset Description
 
