@@ -25,18 +25,18 @@ The workflow covers image preprocessing, feature extraction, model training, eva
 3. ROC-AUC (One-vs-Rest)
 
 # Repository Structure
-'''bash
-├── BrainTumor.ipynb <!-- Complete pipeline notebook -->
+```bash
+├── BrainTumor.ipynb # Complete pipeline notebook
 
-├── radiomics_features.csv <!-- Extracted radiomics features -->
+├── radiomics_features.csv # Extracted radiomics features 
 
 ├── dataset/
 
-│   └── data/ <!-- MRI .mat files -->
+│   └── data/ # MRI .mat files 
 
-├── README.md <!-- Project documentation -->
+├── README.md # Project documentation 
 
-'''
+```
 # Dataset Description
 
 Each .mat file contains:
@@ -95,22 +95,22 @@ Class imbalance is handled using balanced class weights where applicable.
 
 # How to Run
 1. Clone the repository:
-
+```bash
 git clone https://github.com/yourusername/brain-tumor-radiomics-ml.git
 cd brain-tumor-radiomics-ml
-
+```
 2. Install dependencies:
-
+```bash
 pip install -r requirements.txt
-
+```
 3. Place the dataset in:
-
+```bash
 dataset/data/
-
+```
 4. Run the notebook:
-
+```bash
 jupyter notebook BrainTumor.ipynb
-
+```
 # Future Improvements
 
 * Deep learning feature extraction (CNN-based radiomics)
