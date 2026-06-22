@@ -34,6 +34,14 @@ Input: Brain MRI images with tumor masks (.mat files)
 ```
 # Dataset Description
 
+# Dataset
+The dataset used in this project is sourced from:
+
+**Brain Tumor Dataset**
+Cheng, Jun (2017). brain tumor dataset. figshare. Dataset. https://doi.org/10.6084/m9.figshare.1512427.v5
+
+The dataset contains 3064 MRI slices from 233 patients with three types of brain tumors: meningioma, glioma, and pituitary tumor.
+
 Each .mat file contains:
 * MRI image
 * Tumor mask
