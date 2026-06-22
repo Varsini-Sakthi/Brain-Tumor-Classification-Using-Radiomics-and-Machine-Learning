@@ -26,9 +26,9 @@ Input: Brain MRI images with tumor masks (.mat files)
 # Repository Structure
 ```bash
 ├── BrainTumor.ipynb # Complete pipeline notebook
-├── radiomics_features.csv # Extracted radiomics features 
-├── dataset/
-│   └── data/ # MRI .mat files 
+├── dataset/ # MRI .mat files
+│   ├── 1.mat
+│   └── radiomics_features.csv 
 ├── README.md # Project documentation 
 
 ```
@@ -65,10 +65,23 @@ Texture Features (GLCM):
 
 All features are computed only within the tumor region.
 
-3. Machine Learning Models
+3. Hyperparameter Tuning
+* RandomizedSearchCV with 20 iterations
+* StratifiedKFold cross-validation (5 folds) on the training set
+* Scoring metric: macro F1
+* Applied to Random Forest with the following search space:
+
+| Parameter | Values Searched |
+| :--- | :--- |
+| n_estimators | 200, 300, 500 |
+| max_depth | None, 10, 20, 30 |
+| min_samples_split | 2, 5, 10 |
+| min_samples_leaf | 1, 2, 4 |
+
+4. Machine Learning Models
 
 | Model | Description | 
-| :--- | :--- | 
+| :--- | :--- |
 | Logistic Regression | Baseline linear classifier with feature scaling | 
 | Random Forest | Ensemble tree-based model handling non-linearities | 
 | XGBoost | Gradient-boosted trees optimized for multi-class classification |
@@ -103,18 +116,17 @@ pip install -r requirements.txt
 ```
 3. Place the dataset in:
 ```bash
-dataset/data/
+dataset/
 ```
 4. Run the notebook:
 ```bash
 jupyter notebook BrainTumor.ipynb
 ```
+
 # Future Improvements
 
 * Deep learning feature extraction (CNN-based radiomics)
-* Cross-validation with patient-wise splitting
 * External dataset validation
-* Explainability with SHAP/LIME visualizations
 * Clinical outcome prediction integration
 
 # Author
